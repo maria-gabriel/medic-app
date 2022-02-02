@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="wm">190dp</dimen>
+    <dimen name="hm">190dp</dimen>
+</resources>

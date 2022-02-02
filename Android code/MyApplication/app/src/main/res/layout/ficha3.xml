@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ficha3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:text="Observación médica"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textColor="#09A8C4" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="265dp"
+            android:textSize="16dp"
+            android:text="Presión arterial:"
+            android:ems="3"
+            android:typeface="normal"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:textColor="#566573" />
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="265dp"
+            android:textSize="17dp"
+            android:text="Hg"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:textColor="#566573" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="300dp"
+            android:textSize="16dp"
+            android:text="Respiraciones por minuto:"
+            android:ems="3"
+            android:typeface="normal"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:textColor="#566573" />
+
+        <TextView
+            android:id="@+id/t6"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="315dp"
+            android:textSize="17dp"
+            android:text="rpm"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:textColor="#566573" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="350dp"
+            android:textSize="16dp"
+            android:text="Latidos por minuto:"
+            android:ems="3"
+            android:typeface="normal"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:textColor="#566573" />
+
+        <TextView
+            android:id="@+id/t7"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="363dp"
+            android:textSize="17dp"
+            android:text="lpm"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:textColor="#566573" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="410dp"
+            android:textSize="16dp"
+            android:text="Temperatura:"
+            android:ems="3"
+            android:typeface="normal"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:textColor="#566573" />
+
+        <TextView
+            android:id="@+id/t8"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="415dp"
+            android:textSize="17dp"
+            android:text="°C"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:textColor="#566573" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="320dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="60dp"
+            android:textSize="17dp"
+            android:text="Datos generales:"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textColor="#566573" />
+
+        <EditText
+            android:id="@+id/diag"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:textSize="18dp"
+            android:hint="Diagnostico"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:textColor="#566573" />
+
+        <EditText
+            android:id="@+id/pres"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:textSize="18dp"
+            android:hint="Prescripción"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:textColor="#566573" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="320dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"
+            android:text="Signos vitales: (opcional)"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textColor="#566573" />
+
+        <EditText
+            android:id="@+id/sig1"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:textSize="19dp"
+            android:layout_marginLeft="120dp"
+            android:hint="00/00"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:textColor="#566573" />
+
+        <EditText
+            android:id="@+id/sig2"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:textSize="19dp"
+            android:layout_marginLeft="120dp"
+            android:hint="00"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:textColor="#566573" />
+
+        <EditText
+            android:id="@+id/sig3"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:textSize="19dp"
+            android:layout_marginLeft="120dp"
+            android:hint="00"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:textColor="#566573" />
+
+        <EditText
+            android:id="@+id/sig4"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:textSize="19dp"
+            android:layout_marginLeft="120dp"
+            android:hint="00.0"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionDone"
+            android:inputType="date"
+            android:textColor="#566573" />
+
+        <Spinner
+            android:id="@+id/sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="372dp"
+            android:layout_height="60dp">
+        </Spinner>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#09BAD9"
+            android:text="  Guardar  "
+            android:onClick="Guardar"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/salto"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="55dp"
+            android:textSize="18dp"
+            android:onClick="Saltar"
+            android:text="Cancelar la observación médica"
+            android:ems="3"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textColor="#08b6b6" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

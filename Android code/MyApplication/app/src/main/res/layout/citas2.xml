@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Citas2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:background="#09BAD9"
+        android:paddingLeft="-1dp"
+        android:onClick="Inicio"
+        android:text="Inicio"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="105dp"
+        android:background="#09A8C4"
+        android:paddingLeft="-1dp"
+        android:text="Citas"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="210dp"
+        android:background="#09BAD9"
+        android:onClick="Ficha"
+        android:paddingLeft="-1dp"
+        android:text="Ficha"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="315dp"
+        android:background="#09BAD9"
+        android:paddingLeft="-1dp"
+        android:text="Config"
+        android:onClick="Config"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/img"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/texto"
+                android:layout_width="390dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="25dp"
+                android:textSize="17dp"
+                android:hint="Ingrese los siguientes datos para crear su cita:"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:typeface="normal"
+                android:textColor="#566573" />
+
+            <EditText
+                android:id="@+id/sinto"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="-10dp"
+                android:textSize="16dp"
+                android:hint="Síntomas"
+                android:layout_marginLeft="20dp"
+                android:typeface="monospace"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:textColor="#566573" />
+
+            <Button
+                android:id="@+id/bhora"
+                android:layout_width="140dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#09BAD9"
+                android:text="Hora"
+                android:onClick="onClick"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/ubicacion"
+                android:layout_width="185dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#09BAD9"
+                android:text="Ubicación"
+                android:onClick="Obtener"
+                android:drawableLeft="@drawable/ico6"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/ubic"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:textSize="16dp"
+                android:enabled="false"
+                android:hint="Mi ubicación"
+                android:layout_marginLeft="20dp"
+                android:typeface="monospace"
+                android:inputType="textMultiLine"
+                android:textColor="#566573" />
+
+            <EditText
+                android:id="@+id/ubic2"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="0dp"
+                android:textSize="16dp"
+                android:hint="Referencias (ej. Nombre calle/unidad)"
+                android:layout_marginLeft="20dp"
+                android:typeface="monospace"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:textColor="#566573" />
+
+            <Button
+                android:id="@+id/crear"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="61dp"
+                android:layout_marginLeft="90dp"
+                android:backgroundTint="#09BAD9"
+                android:onClick="Crear"
+                android:text="Crear cita"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bfecha"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="215dp"
+            android:layout_marginTop="191dp"
+            android:backgroundTint="#09BAD9"
+            android:text="Fecha"
+            android:onClick="onClick"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/show"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="519dp"
+            android:layout_marginLeft="30dp"
+            android:text="Ver mis citas"
+            android:onClick="Mostrar"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#09D9D9"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/color"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="390dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:textSize="17dp"
+            android:hint="Seleccione la cita para ver más información"
+            android:layout_marginLeft="20dp"
+            android:enabled="false"
+            android:typeface="normal"
+            android:textColor="#566573" />
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="370dp"
+            android:layout_height="410dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#09BAD9"
+            android:text="Regresar"
+            android:onClick="Regresar"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

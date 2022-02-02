@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/z28" android:duration="2200"/>
+    <item android:drawable="@drawable/z1" android:duration="100"/>
+    <item android:drawable="@drawable/z2" android:duration="100"/>
+    <item android:drawable="@drawable/z3" android:duration="100"/>
+    <item android:drawable="@drawable/z4" android:duration="100"/>
+    <item android:drawable="@drawable/z5" android:duration="100"/>
+    <item android:drawable="@drawable/z6" android:duration="100"/>
+    <item android:drawable="@drawable/z7" android:duration="100"/>
+    <item android:drawable="@drawable/z8" android:duration="100"/>
+    <item android:drawable="@drawable/z9" android:duration="100"/>
+    <item android:drawable="@drawable/z10" android:duration="100"/>
+    <item android:drawable="@drawable/z11" android:duration="100"/>
+    <item android:drawable="@drawable/z12" android:duration="100"/>
+    <item android:drawable="@drawable/z14" android:duration="100"/>
+    <item android:drawable="@drawable/z15" android:duration="100"/>
+    <item android:drawable="@drawable/z16" android:duration="100"/>
+    <item android:drawable="@drawable/z17" android:duration="100"/>
+    <item android:drawable="@drawable/z18" android:duration="100"/>
+    <item android:drawable="@drawable/z19" android:duration="100"/>
+    <item android:drawable="@drawable/z20" android:duration="100"/>
+    <item android:drawable="@drawable/z21" android:duration="100"/>
+    <item android:drawable="@drawable/z22" android:duration="100"/>
+    <item android:drawable="@drawable/z23" android:duration="100"/>
+    <item android:drawable="@drawable/z24" android:duration="100"/>
+    <item android:drawable="@drawable/z25" android:duration="100"/>
+    <item android:drawable="@drawable/z26" android:duration="100"/>
+    <item android:drawable="@drawable/z29" android:duration="300"/>
+    <item android:drawable="@drawable/z28" android:duration="3500"/>
+
+</animation-list>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ficha2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:background="#09BAD9"
+        android:paddingLeft="-1dp"
+        android:onClick="Inicio"
+        android:text="Inicio"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="105dp"
+        android:background="#09BAD9"
+        android:paddingLeft="-1dp"
+        android:onClick="Citas"
+        android:text="Citas"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="210dp"
+        android:background="#09A8C4"
+        android:paddingLeft="-1dp"
+        android:text="Ficha"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="315dp"
+        android:background="#09BAD9"
+        android:paddingLeft="-1dp"
+        android:text="Config"
+        android:onClick="Config"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/color"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:text="Mi ficha médica"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textColor="#09A8C4" />
+
+        <EditText
+            android:id="@+id/curp"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:enabled="false"
+            android:text="Curp:"
+            android:textColor="#566573"
+            android:textSize="17dp"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/fechana"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:enabled="false"
+            android:text="Fecha de nacimiento:"
+            android:textColor="#566573"
+            android:textSize="17dp"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/sang"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:enabled="false"
+            android:text="Tipo de sangre:"
+            android:textColor="#566573"
+            android:textSize="17dp"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/gen"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:enabled="false"
+            android:text="Genero:"
+            android:textColor="#566573"
+            android:textSize="17dp"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/estad"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:enabled="false"
+            android:text="Estado civil:"
+            android:textColor="#566573"
+            android:textSize="17dp"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/naci"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:enabled="false"
+            android:text="Nacionalidad:"
+            android:textColor="#566573"
+            android:textSize="17dp"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/fam"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:enabled="false"
+            android:text="Familiar a cargo:"
+            android:textColor="#566573"
+            android:textSize="17dp"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/paren"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:enabled="false"
+            android:text="Parentesco:"
+            android:textColor="#566573"
+            android:textSize="17dp"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/tele"
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:enabled="false"
+            android:text="Telefono:"
+            android:textColor="#566573"
+            android:textSize="18dp"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Mi expediente médico"
+            android:onClick="Ver"
+            android:textSize="17dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#09BAD9"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

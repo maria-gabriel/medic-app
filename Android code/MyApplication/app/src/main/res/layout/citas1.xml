@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Citas1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:onClick="Inicio"
+            android:text="Inicio"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="105dp"
+            android:background="#09A8C4"
+            android:paddingLeft="-1dp"
+            android:text="Citas"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="210dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:text="Fichas"
+            android:onClick="Fichas"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="315dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:text="Config"
+            android:onClick="Config"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/buscar"
+                android:layout_width="130dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="107dp"
+                android:layout_marginLeft="280dp"
+                android:backgroundTint="#09BAD9"
+                android:visibility="invisible"
+                android:text="Buscar"
+                android:onClick="Buscar"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/fech"
+                android:layout_width="60dp"
+                android:layout_height="57dp"
+                android:paddingLeft="18dp"
+                android:layout_marginTop="107dp"
+                android:layout_marginLeft="220dp"
+                android:backgroundTint="#09D9D9"
+                android:onClick="onClick"
+                android:drawableLeft="@drawable/ico7"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/img"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/texto"
+                android:layout_width="390dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:textSize="17dp"
+                android:hint="Elija la fecha de la cita:"
+                android:layout_marginLeft="15dp"
+                android:enabled="false"
+                android:typeface="normal"
+                android:textColor="#566573" />
+
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="-4dp"
+                android:background="#f9f8f8"
+                android:padding="6dp"
+                android:textAlignment="center"
+                android:textSize="19dp"
+                android:text="2018"
+                android:layout_marginLeft="25dp"
+                android:enabled="false"
+                android:typeface="normal"
+                android:textColor="#566573" />
+
+            <TextView
+                android:id="@+id/texto2"
+                android:layout_width="390dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:textSize="17dp"
+                android:hint="Seleccione la cita para ver más información"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:typeface="normal"
+                android:textColor="#566573" />
+
+            <ListView
+                android:id="@+id/lista"
+                android:layout_marginTop="-5dp"
+                android:layout_width="360dp"
+                android:layout_height="310dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp">
+
+            </ListView>
+
+            <Button
+                android:id="@+id/show"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:text="Ver mis citas"
+                android:onClick="Mostrar"
+                android:textSize="18dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#09BAD9"
+                tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

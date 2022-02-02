@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Inicio1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:background="#09A8C4"
+            android:paddingLeft="-1dp"
+            android:text="Inicio"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="105dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:text="Citas"
+            android:onClick="Citas"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="210dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:text="Fichas"
+            android:onClick="Fichas"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="315dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:text="Config"
+            android:onClick="Config"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/img"
+            android:layout_width="190dp"
+            android:layout_height="192dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/pic"
+            android:scaleType="centerCrop"
+            android:tag="0" />
+
+        <ImageButton
+            android:id="@+id/img2"
+            android:layout_width="282dp"
+            android:layout_height="270dp"
+            android:layout_marginLeft="-37dp"
+            android:layout_marginTop="23dp"
+            android:onClick="openGallery"
+            android:background="@drawable/circle"
+            android:foregroundGravity="center" />
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="230dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="192dp" />
+
+        <TextView
+            android:id="@+id/img4"
+            android:layout_width="175dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/ico12"
+            android:paddingLeft="49dp"
+            android:paddingTop="6dp"
+            android:text="Médico"
+            android:textColor="#FFFFFF"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/img"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/color"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:text="Nombre:"
+                android:textColor="#566573"
+                android:textSize="18dp"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/edad"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:text="Cédula:"
+                android:textColor="#566573"
+                android:textSize="18dp"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:text="Email: "
+                android:textColor="#566573"
+                android:textSize="18dp"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/num"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:text="Contacto:"
+                android:textColor="#566573"
+                android:textSize="18dp"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="18dp"
+                android:text="Cerrar sesión"
+                android:onClick="Terminar"
+                android:drawableLeft="@drawable/ico4"
+                android:textSize="17dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#09D9D9"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Config2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:onClick="Inicio"
+            android:text="Inicio"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="105dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:onClick="Citas"
+            android:text="Citas"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="210dp"
+            android:background="#09BAD9"
+            android:onClick="Ficha"
+            android:paddingLeft="-1dp"
+            android:text="Ficha"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="315dp"
+            android:background="#09A8C4"
+            android:paddingLeft="-1dp"
+            android:text="Config"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/ed"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:paddingLeft="4dp"
+            android:onClick="Configurar"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="345dp"
+            android:backgroundTint="#09D9D9"
+            android:drawableLeft="@drawable/ico11"
+            android:textColor="#FFFFFF"
+            android:textSize="19dp"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp"
+            android:orientation="vertical"
+            android:background="@drawable/color">
+
+            <TextView
+                android:id="@+id/texto"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:textSize="21dp"
+                android:text="Mi cuenta"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:typeface="normal"
+                android:textColor="#09BAD9" />
+
+            <EditText
+                android:id="@+id/cor"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:hint="Correo"
+                android:textColor="#566573"
+                android:textSize="18dp"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/tel"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:hint="Teléfono"
+                android:textColor="#566573"
+                android:textSize="18dp"
+                android:inputType="phone"
+                android:imeOptions="actionNext"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/eda"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:hint="Edad"
+                android:textColor="#566573"
+                android:textSize="18dp"
+                android:inputType="phone"
+                android:imeOptions="actionNext"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/con"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:hint="Contraseña"
+                android:textColor="#566573"
+                android:inputType="textPassword"
+                android:imeOptions="actionNext"
+                android:textSize="18dp"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/con2"
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Repetir contraseña"
+                android:visibility="invisible"
+                android:textColor="#566573"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:textSize="18dp"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/show"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="Guardar cambios"
+                android:onClick="Guardar"
+                android:textSize="17dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#09BAD9"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/show2"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:text="Cancelar"
+                android:onClick="Cancelar"
+                android:textSize="17dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#09BAD9"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/texto2"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:text="Necesitas ayuda?"
+                android:onClick="Ayudar"
+                android:layout_gravity="center"
+                android:typeface="normal"
+                android:textColor="#09BAD9" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img"
+        android:visibility="invisible"
+        android:background="@drawable/color"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="match_parent"
+            android:layout_height="570dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/back0"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="-3dp"
+            android:backgroundTint="#09BAD9"
+            android:text="Regresar"
+            android:onClick="Atras"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

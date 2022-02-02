@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ficha5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:text="Inicio"
+            android:onClick="Inicio"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="105dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:text="Citas"
+            android:onClick="Citas"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="210dp"
+            android:background="#09A8C4"
+            android:paddingLeft="-1dp"
+            android:text="Fichas"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="315dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:text="Config"
+            android:onClick="Config"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/usu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/img"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:text="Expediente médico"
+                android:ems="3"
+                android:typeface="monospace"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="#09A8C4" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="390dp"
+                android:layout_height="415dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:scrollbars="vertical"
+                android:textColor="#566573"
+                android:textSize="17dp"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="Regresar"
+                android:onClick="Regresar"
+                android:textSize="17dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#09BAD9"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

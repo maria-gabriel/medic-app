@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Pasaword"
+    android:layout_width="150dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="30dp"
+    android:paddingLeft="30dp"
+    android:textColor="#666768"
+    android:typeface="monospace"
+    android:inputType="textPassword"
+    android:textSize="18dp">
+</EditText>

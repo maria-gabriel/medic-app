@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Administrador.Admin4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:background="#969595"
+        android:paddingLeft="-1dp"
+        android:text="Create"
+        android:onClick="crear"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="105dp"
+        android:background="#969595"
+        android:paddingLeft="-1dp"
+        android:text="Read"
+        android:onClick="leer"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="210dp"
+        android:background="#969595"
+        android:paddingLeft="-1dp"
+        android:text="Update"
+        android:onClick="Modificar"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="315dp"
+        android:background="#969595"
+        android:paddingLeft="-1dp"
+        android:text="Delete"
+        android:onClick="Delete"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/create"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_marginTop="60dp"
+        android:background="#e6e6e6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/sin"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:hint="Sintomas"
+            android:ems="3"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textColor="#566573" />
+
+        <EditText
+            android:id="@+id/hora"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:textSize="18dp"
+            android:hint="Hora: (00:00 hh)"
+            android:layout_gravity="center"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="time"
+            android:textColor="#566573" />
+
+        <EditText
+            android:id="@+id/fecha"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:textSize="18dp"
+            android:hint="Fecha: (AAAA-MM-DD)"
+            android:layout_gravity="center"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:textColor="#566573" />
+
+        <EditText
+            android:id="@+id/lat"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:textSize="18dp"
+            android:hint="Latitud"
+            android:layout_gravity="center"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textColor="#566573" />
+
+        <EditText
+            android:id="@+id/lon"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:textSize="18dp"
+            android:hint="Longitud"
+            android:layout_gravity="center"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textColor="#566573" />
+
+        <EditText
+            android:id="@+id/ref"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:textSize="18dp"
+            android:hint="Referencias"
+            android:layout_gravity="center"
+            android:typeface="monospace"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textColor="#566573" />
+
+        <EditText
+            android:id="@+id/pac"
+            android:layout_width="300dp"
+            android:layout_height="49dp"
+            android:textSize="18dp"
+            android:hint="Paciente"
+            android:layout_gravity="center"
+            android:typeface="monospace"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:textColor="#566573" />
+
+        <Button
+            android:id="@+id/crud"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#969595"
+            android:text="Crear ficha"
+            android:onClick="Registrar"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#969595"
+            android:text="Regresar"
+            android:onClick="Admin"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/read"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:visibility="visible"
+        android:background="#e6e6e6">
+
+        <TextView
+            android:id="@+id/paci"
+            android:layout_width="390dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="30dp"
+            android:textSize="17dp"
+            android:text=""
+            android:scrollbars="vertical"
+            android:layout_marginLeft="20dp"
+            android:typeface="monospace"
+            android:textColor="#566573" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_marginTop="60dp"
+        android:background="#e6e6e6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ide"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:hint="Id cita"
+                android:layout_gravity="center"
+                android:typeface="monospace"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColor="#566573" />
+
+            <Spinner
+                android:id="@+id/sp"
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+            </Spinner>
+
+
+            <EditText
+                android:id="@+id/nuevo"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:hint="Nuevo valor"
+                android:layout_gravity="center"
+                android:typeface="monospace"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:textColor="#566573" />
+
+            <Button
+                android:id="@+id/crud2"
+                android:layout_width="230dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#969595"
+                android:text="Modificar"
+                android:onClick="Modifi"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/back2"
+                android:layout_width="230dp"
+                android:layout_height="55dp"
+                android:backgroundTint="#969595"
+                android:text="Regresar"
+                android:onClick="Admin"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_marginTop="60dp"
+        android:background="#e6e6e6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:hint="Id cita"
+                android:layout_gravity="center"
+                android:typeface="monospace"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textColor="#566573" />
+
+            <Button
+                android:id="@+id/crud3"
+                android:layout_width="230dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#969595"
+                android:text="Eliminar"
+                android:onClick="Eliminar"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/back3"
+                android:layout_width="230dp"
+                android:layout_height="55dp"
+                android:backgroundTint="#969595"
+                android:text="Regresar"
+                android:onClick="Admin"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

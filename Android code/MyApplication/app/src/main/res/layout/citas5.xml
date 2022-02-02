@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Citas5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:onClick="Inicio"
+            android:text="Inicio"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="105dp"
+            android:background="#09A8C4"
+            android:paddingLeft="-1dp"
+            android:text="Citas"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="210dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:text="Fichas"
+            android:onClick="Fichas"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="315dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:text="Config"
+            android:onClick="Config"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+
+        <RelativeLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/img"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/color"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texto2"
+                    android:layout_width="390dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="17dp"
+                    android:hint="Seleccione la cita para ver más información"
+                    android:layout_marginLeft="20dp"
+                    android:enabled="false"
+                    android:typeface="normal"
+                    android:textColor="#566573" />
+
+                <ListView
+                    android:id="@+id/lista"
+                    android:layout_marginTop="-5dp"
+                    android:layout_width="360dp"
+                    android:layout_height="410dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18dp">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="210dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#09BAD9"
+                    android:text="Regresar"
+                    android:onClick="Regresar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17dp"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

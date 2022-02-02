@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ficha1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:text="Inicio"
+            android:onClick="Inicio"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="105dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:text="Citas"
+            android:onClick="Citas"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="210dp"
+            android:background="#09A8C4"
+            android:paddingLeft="-1dp"
+            android:text="Fichas"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="315dp"
+            android:background="#09BAD9"
+            android:paddingLeft="-1dp"
+            android:text="Config"
+            android:onClick="Config"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/color">
+
+        <Button
+            android:id="@+id/buscar"
+            android:layout_width="60dp"
+            android:layout_height="58dp"
+            android:paddingLeft="18dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="335dp"
+            android:backgroundTint="#09D9D9"
+            android:onClick="Buscar"
+            android:drawableLeft="@drawable/ico8"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/boton"
+            android:layout_width="130dp"
+            android:layout_height="132dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="200dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/pic2"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/texto"
+                android:layout_width="390dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:textSize="17dp"
+                android:hint="Ingrese correo del paciente:"
+                android:layout_marginLeft="15dp"
+                android:enabled="false"
+                android:typeface="normal"
+                android:textColor="#566573" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="310dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="-15dp"
+                android:textSize="18dp"
+                android:hint="Email"
+                android:layout_marginLeft="15dp"
+                android:typeface="monospace"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:textColor="#566573" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ficha"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:visibility="invisible"
+            android:layout_below="@+id/img"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/curp"
+                android:layout_width="380dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:text="Curp:"
+                android:textColor="#566573"
+                android:textSize="17dp"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/fechana"
+                android:layout_width="380dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:text="Fecha de nacimiento:"
+                android:textColor="#566573"
+                android:textSize="17dp"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/sang"
+                android:layout_width="380dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:text="Tipo de sangre:"
+                android:textColor="#566573"
+                android:textSize="17dp"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/estad"
+                android:layout_width="380dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:text="Estado civil:"
+                android:textColor="#566573"
+                android:textSize="17dp"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/naci"
+                android:layout_width="380dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:text="Nacionalidad:"
+                android:textColor="#566573"
+                android:textSize="17dp"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/fam"
+                android:layout_width="380dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:text="Familiar a cargo:"
+                android:textColor="#566573"
+                android:textSize="17dp"
+                android:typeface="monospace" />
+
+            <EditText
+                android:id="@+id/paren"
+                android:layout_width="380dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:enabled="false"
+                android:text="Parentesco:"
+                android:textColor="#566573"
+                android:textSize="17dp"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="210dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#09BAD9"
+                android:text="Regresar"
+                android:onClick="Regresar"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usu"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_below="@+id/img"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="265dp"
+                android:layout_height="67dp"
+                android:layout_marginTop="40dp"
+                android:textSize="18dp"
+                android:text="Nombre:"
+                android:enabled="false"
+                android:layout_marginLeft="135dp"
+                android:typeface="monospace"
+                android:inputType="textMultiLine"
+                android:textColor="#566573" />
+
+            <EditText
+                android:id="@+id/edad"
+                android:layout_width="265dp"
+                android:layout_height="50dp"
+                android:textSize="18dp"
+                android:text="Edad:"
+                android:enabled="false"
+                android:layout_marginLeft="135dp"
+                android:typeface="monospace"
+                android:inputType="textPersonName"
+                android:textColor="#566573" />
+
+            <EditText
+                android:id="@+id/cont"
+                android:layout_width="265dp"
+                android:layout_height="50dp"
+                android:textSize="18dp"
+                android:text="Contacto: "
+                android:enabled="false"
+                android:layout_marginLeft="135dp"
+                android:typeface="monospace"
+                android:inputType="textPersonName"
+                android:textColor="#566573" />
+
+            <Button
+                android:id="@+id/fich"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="80dp"
+                android:backgroundTint="#09BAD9"
+                android:onClick="Buscar2"
+                android:text="Ficha médica"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/fich2"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="80dp"
+                android:backgroundTint="#09BAD9"
+                android:text="Expediente médico"
+                android:onClick="Ver"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

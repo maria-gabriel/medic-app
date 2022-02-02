@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.usuario.myapplication">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.PERMISSION_GRANTED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/laun2"
+        android:label="Medical Appointments"
+        android:roundIcon="@mipmap/laun"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode">
+        <activity
+            android:name=".Index"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Inicio1" />
+        <activity android:name=".Registro1" />
+        <activity android:name=".Registro2" />
+        <activity android:name=".Inicio2" />
+        <activity android:name=".Citas2" />
+        <activity android:name=".Citas1" />
+        <activity android:name=".Ficha1" />
+        <activity android:name=".Ficha0" />
+        <activity android:name=".Ficha2" />
+        <activity android:name=".Inicio3" />
+        <activity android:name=".Administrador.Admin1" />
+        <activity android:name=".Administrador.Admin2" />
+        <activity android:name=".Administrador.Admin3" />
+        <activity android:name=".Administrador.Admin4" />
+        <activity android:name=".Citas3" />
+        <activity android:name=".Citas4" />
+        <activity android:name=".Citas5" />
+        <activity android:name=".Citas6" />
+        <activity android:name=".Ficha3" />
+        <activity android:name=".Ficha4" />
+        <activity android:name=".Ficha5" />
+        <activity android:name=".Config1" />
+        <activity android:name=".Config2" />
+        <activity android:name=".Administrador.Admin5" />
+        <activity android:name=".Administrador.Admin6" />
+        <activity android:name=".Administrador.Admin7" />
+        <activity android:name=".Config3"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Administrador.Admin7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:background="#969595"
+            android:paddingLeft="-1dp"
+            android:text="Reporte 1"
+            android:onClick="Reporte1"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="105dp"
+            android:background="#969595"
+            android:paddingLeft="-1dp"
+            android:text="Reporte 2"
+            android:onClick="Reporte2"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="210dp"
+            android:background="#818080"
+            android:paddingLeft="-1dp"
+            android:text="Reporte 3"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="315dp"
+            android:background="#969595"
+            android:paddingLeft="-1dp"
+            android:text="Respaldo"
+            android:onClick="Reporte4"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical"
+        android:background="#e6e6e6">
+
+        <TextView
+            android:id="@+id/id4"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp"
+            android:text="Citas de los pacientes este mes"
+            android:typeface="monospace"
+            android:enabled="false"
+            android:textColor="#566573" />
+
+        <TextView
+            android:id="@+id/paci"
+            android:layout_width="400dp"
+            android:layout_height="440dp"
+            android:paddingLeft="10dp"
+            android:textSize="17dp"
+            android:background="#f2f2f2"
+            android:text=""
+            android:scrollbars="vertical"
+            android:layout_marginLeft="10dp"
+            android:typeface="monospace"
+            android:textColor="#566573" />
+
+        <Button
+            android:id="@+id/back3"
+            android:layout_width="230dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#969595"
+            android:text="Regresar"
+            android:onClick="Admin"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
